@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:id="@+id/launchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/launch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:maxLines="2"
+                android:text="@+id/contacts"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+	
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+	        <TextView android:id="@+id/begin_date"
+	            android:layout_width="fill_parent"
+	            android:text="@+id/begin_date"
+	            android:singleLine="true"
+	            android:textColor="@android:color/black"
+	            android:layout_height="wrap_content"/>
+
+	        <TextView
+	            android:id="@+id/end_date"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:text="@+id/end_date"
+	            android:textColor="@android:color/black"
+	            android:visibility="gone" />
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+
+	            <TextView
+	                android:id="@+id/category"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1.0"
+	                android:singleLine="true"
+	                android:text="@+id/category"
+	                android:textColor="@android:color/black" />
+
+	            <TextView
+	                android:id="@+id/need_num"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	        </LinearLayout>
+	        <TextView android:id="@+id/place"
+	            android:text="@+id/place"
+	            android:textColor="@android:color/black"
+	            android:maxLines="2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            />
+	        <TextView android:id="@+id/join_num"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="#2982CA"
+	            android:textColor="@android:color/white"
+	            android:textSize="15sp"
+	            android:layout_marginTop="10dip"
+	            android:padding="5dip"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@+id/join_num"/>
+	    
+    </LinearLayout>
+    
+</LinearLayout>

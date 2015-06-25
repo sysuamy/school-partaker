@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <include layout="@layout/header"/>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+	        <TextView android:id="@+id/begin_date"
+	            android:layout_width="fill_parent"
+	            android:text="@+id/begin_date"
+	            android:singleLine="true"
+	            android:textColor="@android:color/black"
+	            android:layout_height="wrap_content"/>
+
+	        <TextView
+	            android:id="@+id/end_date"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:text="@+id/end_date"
+	            android:textColor="@android:color/black"
+	            android:visibility="gone" />
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:id="@+id/category"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1.0"
+	                android:singleLine="true"
+	                android:text="@+id/category"
+	                android:textColor="@android:color/black" />
+
+	            <TextView
+	                android:id="@+id/need_num"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	        </LinearLayout>
+	        <TextView android:id="@+id/place"
+	            android:text="@+id/place"
+	            android:textColor="@android:color/black"
+	            android:maxLines="2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            />
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:id="@+id/launch"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1.0"
+	                android:textAppearance="?android:attr/textAppearanceSmall"
+	                android:visibility="gone" />
+
+	            <TextView
+	                android:id="@+id/contacts"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1.0"
+	                android:autoLink="phone"
+	                android:maxLines="2"
+	                android:text="@+id/contacts"
+	                android:textColor="@android:color/black" />
+
+	            <TextView
+	                android:id="@+id/see_join"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:clickable="true"
+	                android:text="@string/see_more"
+	                android:textAppearance="?android:attr/textAppearanceSmall"
+	                android:textColor="@color/light_blue"
+	                android:textStyle="italic" />
+
+	        </LinearLayout>
+	        <TextView android:id="@+id/join_num"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="#2982CA"
+	            android:textColor="@android:color/white"
+	            android:textSize="15sp"
+	            android:layout_marginTop="10dip"
+	            android:padding="5dip"
+	            android:gravity="center"
+	            android:singleLine="true"
+	            android:text="@+id/join_num"/>
+	    
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_share_content"
+        android:layout_margin="10dip"
+        android:orientation="vertical">
+        
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="活动详情："
+            android:textSize="18sp"/>
+        <TextView android:id="@+id/detail"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@+id/detail"
+	        android:padding="5dip"
+	      />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/join"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/btn_blue"
+        android:text="@string/i_want_to_join"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>
